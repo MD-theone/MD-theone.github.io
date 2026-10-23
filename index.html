@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Portfolio de Michael Djossou, étudiant en cycle préparatoire de génie civil. Découvrez son parcours, ses compétences et ses projets.">
+
+  <title>Michael Djossou | Futur ingénieur en génie civil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="loader" id="loader" aria-label="Chargement">
+    <div class="loader-mark">MD<span>.</span></div>
+    <div class="loader-track"><span></span></div>
+    <p>CONSTRUCTION DU PORTFOLIO...</p>
+  </div>
+
+  <div class="site-shell" id="top">
+
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Accueil Michael Djossou">
+        MD<span>.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#education">Formation</a>
+        <a href="#contact" class="nav-contact">Me contacter <span>↗</span></a>
+        <button class="theme-toggle" id="themeToggle"
+          aria-label="Passer au thème clair">☼</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <div class="availability reveal">
+            <span class="status-dot"></span>
+            ÉTUDIANT EN CYCLE PRÉPARATOIRE
+          </div>
+
+          <p class="eyebrow reveal">BONJOUR, JE SUIS</p>
+
+          <h1 class="hero-title reveal">
+            Michael<br>
+            <span class="gradient-text">Djossou.</span>
+          </h1>
+
+          <h2 class="hero-role reveal">
+            Futur ingénieur en <span id="typedRole">génie civil</span><span class="cursor">|</span>
+          </h2>
+
+          <p class="hero-description reveal">
+            Passionné par la conception, les structures et les grands projets
+            d'infrastructure, je construis progressivement les compétences
+            nécessaires pour transformer les idées en réalisations concrètes.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              Explorer mes projets <span>↗</span>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              Découvrir mon profil <span>↓</span>
+            </a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <span>RETROUVEZ-MOI SUR</span>
+            <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <span class="social-divider">/</span>
+            <a href="mailto:ton.email@example.com">Email ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-label label-top">
+            <span class="label-dot"></span> ENGINEERING / 001
+          </div>
+
+          <div class="blueprint-frame">
+            <div class="blueprint-grid"></div>
+
+            <svg class="building-art" viewBox="0 0 440 500"
+              role="img" aria-label="Illustration architecturale d'un bâtiment moderne">
+              <defs>
+                <linearGradient id="buildingGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#45e3e8" stop-opacity=".9"/>
+                  <stop offset="100%" stop-color="#3274d9" stop-opacity=".35"/>
+                </linearGradient>
+                <pattern id="windowPattern" width="27" height="31"
+                  patternUnits="userSpaceOnUse">
+                  <rect x="4" y="4" width="13" height="18"
+                    fill="#55e4eb" opacity=".55"/>
+                </pattern>
+              </defs>
+
+              <g fill="none" stroke="#55dce7" stroke-width="1" opacity=".55">
+                <path d="M28 426H410"/>
+                <path d="M48 440H390"/>
+                <path d="M80 80V440M360 55V440" stroke-dasharray="4 7"/>
+                <path d="M60 92H130M60 92V120M345 75H390M390 75V103"/>
+                <circle cx="220" cy="225" r="164" stroke-dasharray="3 10"/>
+                <circle cx="220" cy="225" r="185" stroke-dasharray="2 12" opacity=".5"/>
+              </g>
+
+              <g stroke="#6cecf0" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M104 424V211L205 151V424Z"
+                  fill="url(#buildingGradient)" fill-opacity=".4"/>
+                <path d="M205 151L306 204V424H205Z"
+                  fill="#174c72" fill-opacity=".55"/>
+                <path d="M104 211L205 151L306 204"
+                  fill="none" stroke-width="2.5"/>
+                <path d="M104 211L205 265L306 204"
+                  fill="none" opacity=".7"/>
+                <path d="M104 265L205 319L306 265M104 319L205 373L306 319"
+                  fill="none" opacity=".6"/>
+                <path d="M205 151V424" stroke-width="2"/>
+                <path d="M130 195V424M156 180V424M182 166V424"
+                  stroke-dasharray="2 6" opacity=".5"/>
+                <path d="M230 164V424M255 178V424M280 191V424"
+                  stroke-dasharray="2 6" opacity=".5"/>
+                <path d="M104 211L205 265L306 204"
+                  fill="none" stroke-width="1.5"/>
+                <path d="M104 424H306" stroke-width="3"/>
+              </g>
+
+              <g fill="url(#windowPattern)" opacity=".85">
+                <path d="M110 214L201 160V417L110 417Z"/>
+                <path d="M211 160L300 207V417H211Z"/>
+              </g>
+
+              <g fill="none" stroke="#f4c879" stroke-width="1.5">
+                <path d="M76 211V424M69 211H83M69 424H83"/>
+                <path d="M83 211L76 202L69 211M83 424L76 433L69 424"/>
+                <path d="M104 451H306M104 445V457M306 445V457"/>
+              </g>
+
+              <g fill="#f4c879" font-family="monospace" font-size="10">
+                <text x="48" y="315" transform="rotate(-90 48 315)">STRUCTURE / A-01</text>
+                <text x="170" y="468">ELEVATION 01</text>
+              </g>
+
+              <circle cx="306" cy="204" r="4" fill="#f4c879"/>
+              <circle cx="104" cy="211" r="4" fill="#f4c879"/>
+            </svg>
+
+            <div class="blueprint-coordinates">
+              <span>33° 34' N</span>
+              <span>ENGINEERING MINDSET</span>
+            </div>
+          </div>
+
+          <div class="floating-card">
+            <span class="floating-icon">⌁</span>
+            <div>
+              <strong>Future Engineer</strong>
+              <p>Learn. Design. Build.</p>
+            </div>
+            <span class="floating-arrow">↗</span>
+          </div>
+
+          <div class="visual-label label-bottom">FIG. 001 — STRUCTURAL VISION</div>
+        </div>
+
+        <a href="#about" class="scroll-cue">
+          <span class="scroll-line"></span>
+          DÉFILER POUR EXPLORER
+        </a>
+      </section>
+
+      <!-- BANDEAU -->
+      <div class="ticker" aria-label="Domaines d'intérêt">
+        <div class="ticker-track">
+          <span>GÉNIE CIVIL <b>✳</b></span>
+          <span>STRUCTURES <b>✳</b></span>
+          <span>INFRASTRUCTURES <b>✳</b></span>
+          <span>CONCEPTION <b>✳</b></span>
+          <span>INNOVATION <b>✳</b></span>
+          <span>GÉNIE CIVIL <b>✳</b></span>
+          <span>STRUCTURES <b>✳</b></span>
+          <span>INFRASTRUCTURES <b>✳</b></span>
+          <span>CONCEPTION <b>✳</b></span>
+          <span>INNOVATION <b>✳</b></span>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="section section-wrap" id="about">
+        <div class="section-heading reveal">
+          <span class="section-index">01 / À PROPOS</span>
+          <h2>Apprendre aujourd'hui.<br><span class="muted">Construire demain.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              Je suis <strong>Michael Djossou</strong>, étudiant en première
+              année de cycle préparatoire en génie civil.
+            </p>
+            <p>
+              Mon parcours est le point de départ d'une ambition :
+              comprendre comment les bâtiments et les infrastructures sont
+              conçus, dimensionnés et réalisés. Je m'intéresse aux sciences
+              appliquées, à la résolution de problèmes et à la technologie
+              au service de la construction.
+            </p>
+            <p>
+              Je développe actuellement mes bases scientifiques et ma
+              méthode de travail, tout en découvrant les outils numériques
+              qui accompagnent les métiers de l'ingénierie.
+            </p>
+            <a href="#contact" class="text-link">Échangeons sur vos projets <span>↗</span></a>
+          </div>
+
+          <div class="about-panel reveal">
+            <div class="panel-top">
+              <span>PROFILE.SYS</span>
+              <span class="panel-dots">● ● ●</span>
+            </div>
+
+            <div class="profile-row">
+              <span class="profile-key">IDENTITÉ</span>
+              <span>Michael Djossou</span>
+            </div>
+            <div class="profile-row">
+              <span class="profile-key">FORMATION</span>
+              <span>Cycle préparatoire</span>
+            </div>
+            <div class="profile-row">
+              <span class="profile-key">SPÉCIALITÉ</span>
+              <span>Génie civil</span>
+            </div>
+            <div class="profile-row">
+              <span class="profile-key">LOCALISATION</span>
+              <span>Casablanca, Maroc</span>
+            </div>
+            <div class="profile-row">
+              <span class="profile-key">OBJECTIF</span>
+              <span>Devenir ingénieur</span>
+            </div>
+
+            <div class="panel-footer">
+              <span class="status-dot"></span>
+              <span>EN PHASE D'APPRENTISSAGE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section section-wrap" id="skills">
+        <div class="section-heading reveal">
+          <span class="section-index">02 / COMPÉTENCES</span>
+          <h2>Des bases solides.<br><span class="muted">Une progression continue.</span></h2>
+          <p>Les domaines que j'étudie, que j'explore et que je souhaite approfondir.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="card-number">01</span>
+            <div class="skill-icon">∑</div>
+            <h3>Sciences appliquées</h3>
+            <p>Mathématiques, physique et raisonnement scientifique pour résoudre des problèmes techniques.</p>
+            <div class="skill-tags"><span>Mathématiques</span><span>Physique</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="card-number">02</span>
+            <div class="skill-icon">⌂</div>
+            <h3>Génie civil</h3>
+            <p>Découverte des structures, des matériaux, des principes de construction et des infrastructures.</p>
+            <div class="skill-tags"><span>Structures</span><span>Matériaux</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="card-number">03</span>
+            <div class="skill-icon">▦</div>
+            <h3>Outils numériques</h3>
+            <p>Initiation au développement web et exploration progressive des outils numériques de conception.</p>
+            <div class="skill-tags"><span>VS Code</span><span>HTML / CSS</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="card-number">04</span>
+            <div class="skill-icon">↗</div>
+            <h3>Compétences humaines</h3>
+            <p>Organisation, curiosité, autonomie, travail en équipe et capacité à apprendre.</p>
+            <div class="skill-tags"><span>Rigueur</span><span>Collaboration</span></div>
+          </article>
+        </div>
+
+        <p class="skills-note reveal">
+          <span>NOTE :</span> Les compétences présentées reflètent mes domaines
+          d'apprentissage. Elles évolueront avec mes cours et mes projets.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section section-wrap" id="projects">
+        <div class="section-heading project-heading reveal">
+          <div>
+            <span class="section-index">03 / PROJETS</span>
+            <h2>La théorie prend<br><span class="muted">forme dans la pratique.</span></h2>
+          </div>
+          <span class="project-counter">PORTFOLIO / 2026</span>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-visual visual-blueprint">
+              <span class="project-type">WEB / 001</span>
+              <svg viewBox="0 0 600 300" aria-hidden="true">
+                <g fill="none" stroke="#6de7ee" stroke-width="1.2">
+                  <path d="M40 250H560M40 50H560M100 30V270M500 30V270" opacity=".3"/>
+                  <path d="M150 250V115L300 50L450 115V250Z" opacity=".9"/>
+                  <path d="M150 115H450M150 160H450M150 205H450"/>
+                  <path d="M200 95V250M250 72V250M300 50V250M350 72V250M400 95V250"/>
+                  <path d="M120 265H480M120 260V270M480 260V270" stroke="#f4c879"/>
+                  <circle cx="300" cy="150" r="115" stroke-dasharray="4 8" opacity=".4"/>
+                </g>
+              </svg>
+              <span class="project-stamp">EN COURS</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>PROJET PERSONNEL</span><span>2026</span></div>
+              <h3>Portfolio d'ingénierie</h3>
+              <p>Création d'une vitrine numérique pour présenter mon parcours, mes compétences et mes futurs projets techniques.</p>
+              <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-structure">
+              <span class="project-type">CIVIL / 002</span>
+              <svg viewBox="0 0 400 260" aria-hidden="true">
+                <g fill="none" stroke="#f4c879" stroke-width="1.5">
+                  <path d="M45 220H355M70 220V70H330V220"/>
+                  <path d="M70 110H330M70 155H330"/>
+                  <path d="M115 70V220M160 70V220M205 70V220M250 70V220M295 70V220"/>
+                  <path d="M55 70H345M55 220H345" stroke="#6de7ee" stroke-width="3"/>
+                  <path d="M70 55V35H330V55" stroke-dasharray="4 5"/>
+                  <circle cx="70" cy="70" r="4"/><circle cx="330" cy="70" r="4"/>
+                </g>
+              </svg>
+              <span class="project-stamp">À EXPLORER</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>ÉTUDE TECHNIQUE</span><span>02</span></div>
+              <h3>Étude d'une structure</h3>
+              <p>Un futur exercice pour découvrir les éléments porteurs, les charges et les principes de stabilité d'un bâtiment.</p>
+              <div class="project-tags"><span>Structures</span><span>Analyse</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-grid">
+              <span class="project-type">DESIGN / 003</span>
+              <div class="model-building" aria-hidden="true">
+                <div class="model-roof"></div>
+                <div class="model-floor floor-one"></div>
+                <div class="model-floor floor-two"></div>
+                <div class="model-floor floor-three"></div>
+                <div class="model-base"></div>
+              </div>
+              <span class="project-stamp">À EXPLORER</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>CONCEPTION</span><span>03</span></div>
+              <h3>Maquette architecturale</h3>
+              <p>Objectif futur : réaliser une maquette simple et documenter les différentes étapes de conception.</p>
+              <div class="project-tags"><span>Conception</span><span>Modélisation</span></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-disclaimer reveal">
+          Les projets marqués « à explorer » sont des idées de travaux futurs,
+          et non des réalisations déjà terminées.
+        </p>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section section-wrap" id="education">
+        <div class="section-heading reveal">
+          <span class="section-index">04 / FORMATION</span>
+          <h2>Mon parcours.<br><span class="muted">Mon prochain chapitre.</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-date">2026 — EN COURS</div>
+            <div class="timeline-content">
+              <span class="timeline-status">FORMATION ACTUELLE</span>
+              <h3>Cycle préparatoire</h3>
+              <p class="timeline-subtitle">Orientation génie civil</p>
+              <p>Consolidation des fondamentaux scientifiques et préparation progressive aux études d'ingénierie.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-date">PROCHAINE ÉTAPE</div>
+            <div class="timeline-content">
+              <span class="timeline-status">OBJECTIF ACADÉMIQUE</span>
+              <h3>Approfondissement en génie civil</h3>
+              <p class="timeline-subtitle">Projet de parcours</p>
+              <p>Développer des connaissances en calcul des structures, matériaux, conception et conduite de projets.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <div class="contact-glow"></div>
+        <div class="section-wrap contact-inner">
+          <div class="section-heading reveal">
+            <span class="section-index">05 / CONTACT</span>
+            <h2>Une idée, un projet ?<br><span class="muted">Parlons-en.</span></h2>
+            <p>Je suis ouvert aux échanges, aux conseils et aux opportunités d'apprentissage liées à l'ingénierie.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <a class="contact-link" href="mailto:ton.email@example.com">
+                <span class="contact-icon">✉</span>
+                <span><small>ÉCRIVEZ-MOI</small><strong>ton.email@example.com</strong></span>
+                <span class="contact-arrow">↗</span>
+              </a>
+
+              <a class="contact-link"
+                href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+                target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">in</span>
+                <span><small>RETROUVEZ-MOI</small><strong>LinkedIn</strong></span>
+                <span class="contact-arrow">↗</span>
+              </a>
+
+              <div class="contact-note">
+                <span class="status-dot"></span>
+                Disponible pour apprendre et échanger.
+              </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm">
+              <label for="name">Votre nom</label>
+              <input id="name" name="name" type="text"
+                placeholder="Comment vous appelez-vous ?" required>
+
+              <label for="email">Votre adresse e-mail</label>
+              <input id="email" name="email" type="email"
+                placeholder="nom@exemple.com" required>
+
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Parlons de votre idée..." required></textarea>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Préparer le message <span>↗</span>
+              </button>
+              <p class="form-feedback" id="formFeedback" aria-live="polite">
+                Le formulaire ouvrira votre application e-mail.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-wrap">
+      <a class="brand" href="#top">MD<span>.</span></a>
+      <p>Conçu avec curiosité et ambition.</p>
+      <span>© <span id="year"></span> Michael Djossou</span>
+      <a class="back-top" href="#top" aria-label="Retour en haut">↑</a>
+    </footer>
+  </div>
+</body>
+</html>
